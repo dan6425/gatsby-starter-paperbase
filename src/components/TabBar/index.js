@@ -16,7 +16,7 @@ function TabBar({ classes, tabNames = [] }) {
 		<AppBar component="div" className={classes.secondaryBar} color="primary" position="static" elevation={0}>
 			<Tabs value={0} textColor="inherit">
 				{tabNames.map(tabName => (
-					<Tab textColor="inherit" label={`${tabName}`} />
+					<Tab textColor="inherit" label={`${tabName}`}/>
 				))}
 			</Tabs>
 		</AppBar>

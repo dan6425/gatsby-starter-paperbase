@@ -23,11 +23,11 @@ import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 import Logo from 'components/Logo'
 const categories = [
 	{
-		id: 'Order Management',
+		id: 'GoldBelly Express',
 		children: [
-			{ id: 'Orders', icon: <DnsRoundedIcon />, page: 'database' },
+			{ id: 'Orders', icon: <DnsRoundedIcon />, page: 'orders' },
 			{ id: 'Mach', icon: <PermMediaOutlinedIcon />, page: 'storage' },
-			{ id: 'Status', icon: <SettingsEthernetIcon />, page: 'functions' },
+			{ id: 'Status', icon: <SettingsEthernetIcon />, page: 'status' },
 			{ id: 'Settings', icon: <SettingsIcon />, page: 'settings' },
 		],
 	},
@@ -64,7 +64,7 @@ const styles = theme => ({
 		},
 	},
 	itemActiveItem: {
-		color: '#4fc3f7',
+		color: '#cf4520',
 	},
 	itemPrimary: {
 		color: 'inherit',
@@ -85,11 +85,11 @@ function Navigator({ classes, location = null, ...rest }) {
 		<Drawer variant="permanent" {...rest}>
 			<List disablePadding>
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
-					<Grid container alignItems="center" spacing={8} direction="column">
+					<Grid container alignItems="center" spacing={1} direction="column">
 						<Grid item>
 							<Logo />
 						</Grid>
-						<Grid item>GoldBelly Express</Grid>
+						<Grid item>Jack Stack BBQ</Grid>
 					</Grid>
 				</ListItem>
 

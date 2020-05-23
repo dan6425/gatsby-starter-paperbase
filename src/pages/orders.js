@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from 'components/Layout'
-import Content from 'components/Content'
+import OrderContent1 from 'components/OrderContent'
 
-function FunctionsPage({ location }) {
+function OrderPage({ location }) {
 	const pageTitle = location ? location.pathname.replace(/\//g, '') : ''
 	return (
 		<Layout location={location} title={pageTitle}>
-			<Content />
+			<OrderContent1 />
 		</Layout>
 	)
 }
-FunctionsPage.propTypes = {
+OrderPage.propTypes = {
 	location: PropTypes.object,
 }
-export default FunctionsPage
+export default OrderPage

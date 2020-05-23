@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `GoldBelly Order Import Manager`,
+		title: `GoldBelly Express`,
 		author: `Dan Lewis`,
 		description: `A dashboard for managing GoldBelly orders for Jack Stack Barbecue`,
 		siteUrl: `https://jackstackbbq.com`,

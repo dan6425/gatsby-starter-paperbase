@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 
-function LabPage({ location }) {
+function StatusPage({ data, location }) {
 	const pageTitle = location ? location.pathname.replace(/\//g, '') : ''
 	return (
 		<Layout location={location} title={pageTitle}>
@@ -11,7 +11,8 @@ function LabPage({ location }) {
 		</Layout>
 	)
 }
-LabPage.propTypes = {
+StatusPage.propTypes = {
+	data: PropTypes.object.isRequired,
 	location: PropTypes.object,
 }
-export default LabPage
+export default StatusPage
