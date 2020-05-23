@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
 import { withStyles } from '@material-ui/core/styles'
-import ContentGraphic from './ContentGraphic'
+import Logo from 'components/Logo'
 const styles = theme => ({
 	paper: {
 		margin: 'auto',
@@ -45,12 +45,12 @@ function Content({ classes }) {
 					alignItems="center"
 					justify="center"
 				>
-					<Grid lg={6} xs={12} item align="center">
-						<ContentGraphic />
+					<Grid lg={3} xs={12} item align="center">
+						<Logo />
 					</Grid>
-					<Grid lg={6} xs={12} item>
-						<Typography component="h2" variant="display1" color="textSecondary" align="center">
-							Welcome to your new project
+					<Grid lg={9} xs={12} item>
+						<Typography component="h1" variant="display1" color="textSecondary" align="center">
+							Jack Stack Barbecue - Goldbelly Order Manager
 						</Typography>
 					</Grid>
 				</Grid>
