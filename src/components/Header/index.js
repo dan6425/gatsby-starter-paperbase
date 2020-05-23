@@ -62,11 +62,6 @@ function Header({ classes, onDrawerToggle, title }) {
 						</Hidden>
 						<Grid item xs />
 						<Grid item>
-							<Typography className={classes.link} component="a" href="#">
-								Go to docs
-							</Typography>
-						</Grid>
-						<Grid item>
 							<Tooltip title="Alerts • No alters">
 								<IconButton color="inherit">
 									<NotificationsIcon />
@@ -91,15 +86,8 @@ function Header({ classes, onDrawerToggle, title }) {
 						</Grid>
 						<Grid item>
 							<Button className={classes.button} variant="outlined" color="inherit" size="small">
-								Web setup
+								Log Out
 							</Button>
-						</Grid>
-						<Grid item>
-							<Tooltip title="Help">
-								<IconButton color="inherit">
-									<HelpIcon />
-								</IconButton>
-							</Tooltip>
 						</Grid>
 					</Grid>
 				</Toolbar>

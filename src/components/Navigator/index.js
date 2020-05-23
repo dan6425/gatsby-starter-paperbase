@@ -23,24 +23,15 @@ import PhonelinkSetupIcon from '@material-ui/icons/PhonelinkSetup'
 import Logo from 'components/Logo'
 const categories = [
 	{
-		id: 'Develop',
+		id: 'Order Management',
 		children: [
-			{ id: 'Authentication', icon: <PeopleIcon />, page: 'authentication' },
-			{ id: 'Database', icon: <DnsRoundedIcon />, page: 'database' },
-			{ id: 'Storage', icon: <PermMediaOutlinedIcon />, page: 'storage' },
-			{ id: 'Hosting', icon: <PublicIcon />, page: 'hosting' },
-			{ id: 'Functions', icon: <SettingsEthernetIcon />, page: 'functions' },
-			{ id: 'ML Kit', icon: <SettingsInputComponentIcon />, page: 'ml' },
+			{ id: 'Orders', icon: <DnsRoundedIcon />, page: 'database' },
+			{ id: 'Mach', icon: <PermMediaOutlinedIcon />, page: 'storage' },
+			{ id: 'Status', icon: <SettingsEthernetIcon />, page: 'functions' },
+			{ id: 'Settings', icon: <SettingsIcon />, page: 'settings' },
 		],
 	},
-	{
-		id: 'Quality',
-		children: [
-			{ id: 'Analytics', icon: <SettingsIcon />, page: 'analytics' },
-			{ id: 'Performance', icon: <TimerIcon />, page: 'performance' },
-			{ id: 'Test Lab', icon: <PhonelinkSetupIcon />, page: 'lab' },
-		],
-	},
+	
 ]
 
 const styles = theme => ({
@@ -94,11 +85,11 @@ function Navigator({ classes, location = null, ...rest }) {
 		<Drawer variant="permanent" {...rest}>
 			<List disablePadding>
 				<ListItem className={classNames(classes.firebase, classes.item, classes.itemCategory)}>
-					<Grid container alignItems="center" spacing={8} direction="row">
+					<Grid container alignItems="center" spacing={8} direction="column">
 						<Grid item>
 							<Logo />
 						</Grid>
-						<Grid item>Paperbase</Grid>
+						<Grid item>GoldBelly Express</Grid>
 					</Grid>
 				</ListItem>
 
@@ -112,7 +103,7 @@ function Navigator({ classes, location = null, ...rest }) {
 								primary: classes.itemPrimary,
 							}}
 						>
-							Project Overview
+							Dashboard Home
 						</ListItemText>
 					</ListItem>
 				</Link>

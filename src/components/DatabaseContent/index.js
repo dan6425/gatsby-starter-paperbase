@@ -39,7 +39,7 @@ const styles = theme => ({
 		padding: '48px 36px 0',
 	},
 })
-const tabNames = ['Data', 'Rules', 'Indexes', 'Usage']
+const tabNames = ['Open Orders', 'Pending Orders', 'Complete Orders']
 function DatabaseContent({ classes }) {
 	return (
 		<>
@@ -55,7 +55,7 @@ function DatabaseContent({ classes }) {
 								<Grid item xs>
 									<TextField
 										fullWidth
-										placeholder="Search by email address, phone number, or user UID"
+										placeholder="Search by Order Number..."
 										InputProps={{
 											disableUnderline: true,
 											className: classes.searchInput,
@@ -63,8 +63,8 @@ function DatabaseContent({ classes }) {
 									/>
 								</Grid>
 								<Grid item>
-									<Button variant="contained" color="primary" className={classes.addUser}>
-										Add user
+									<Button variant="contained" color="primary">
+										Search
 									</Button>
 									<Tooltip title="Reload">
 										<IconButton>
@@ -78,7 +78,7 @@ function DatabaseContent({ classes }) {
 
 					<div className={classes.contentWrapper}>
 						<Typography color="textSecondary" align="center">
-							No users for this project yet
+							No orders yet... :(
 						</Typography>
 					</div>
 				</Paper>
