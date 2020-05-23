@@ -1,10 +1,10 @@
 {
-  "name": "GoldBelly Express",
+  "name": "gatsby-starter-paperbase",
   "version": "1.0.0",
   "description": "A dashboard for managing GoldBelly orders for Jack Stack Barbecue",
   "main": "index.js",
-  "repository": "",
-  "author": "Dan Lewis",
+  "repository": "https://github.com/willcode4food/gatsby-starter-paperbase",
+  "author": "Marc Arbesman marbesman@gmail.com",
   "license": "MIT",
   "private": false,
   "dependencies": {
@@ -18,7 +18,8 @@
     "react-dom": "^16.13.0",
     "typeface-merriweather": "^0.0.72",
     "typeface-montserrat": "^0.0.75",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
