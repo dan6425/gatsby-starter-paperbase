@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A dashboard for managing GoldBelly orders for Jack Stack Barbecue",
   "main": "index.js",
-  "repository": "https://github.com/willcode4food/gatsby-starter-paperbase",
-  "author": "Marc Arbesman marbesman@gmail.com",
+  "repository": "#",
+  "author": "Dan Lewis",
   "license": "MIT",
   "private": false,
   "dependencies": {

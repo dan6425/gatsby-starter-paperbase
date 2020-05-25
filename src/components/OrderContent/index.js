@@ -13,6 +13,7 @@ import { withStyles, lighten, makeStyles } from '@material-ui/core/styles'
 import SearchIcon from '@material-ui/icons/Search'
 import RefreshIcon from '@material-ui/icons/Refresh'
 import TabBar from 'components/TabBar'
+import Container from '@material-ui/core/Container';
 
 // imports for table data 
 import clsx from 'clsx';
@@ -284,6 +285,7 @@ function descendingComparator(a, b, orderBy) {
 
 	  return (
 		<div className={classes.root}>
+			<Container maxWidth="xl" disableGutters="true" className={classes.container}>
 		  <Paper className={classes.paper}>
 			<TabBar tabNames={tabNames} />
 			<EnhancedTableToolbar numSelected={selected.length} />
@@ -354,10 +356,12 @@ function descendingComparator(a, b, orderBy) {
 			  onChangeRowsPerPage={handleChangeRowsPerPage}
 			/>
 		  </Paper>
+		  
 		  <FormControlLabel
 			control={<Switch checked={dense} onChange={handleChangeDense} />}
 			label="Dense padding"
 		  />
+		  </Container>
 		</div>
 	  )};
 
